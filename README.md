@@ -1,5 +1,5 @@
 # docker-cikl-logstash
-This image provides an instance of elasticsearch, ready for use with Cikl.
+This image provides an instance of logstash, ready for use with Cikl.
 
 # release process
 

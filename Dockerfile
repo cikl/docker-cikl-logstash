@@ -7,7 +7,7 @@ RUN \
   gpg --export --armor D88E42B4 | apt-key add - && \ 
   echo "deb http://packages.elasticsearch.org/logstash/1.4/debian stable main" > /etc/apt/sources.list.d/logstash.list && \
   apt-get update && \
-  apt-get install -y --no-install-recommends -y openjdk-7-jre-headless logstash logstash-contrib && \
+  apt-get install -y --no-install-recommends -y openjdk-7-jre-headless logstash=1.4.2-1-2c0f5a1 logstash-contrib=1.4.2-1-efd53ef && \
   apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Define mountable directories.
